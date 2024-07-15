@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from blog_project.blog.models import Author, Post
+from .models import Author, Post
 
 # Register your models here.
 admin.site.register(Author)
