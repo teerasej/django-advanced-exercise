@@ -14,3 +14,6 @@ class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
     serializer_class = PostSerializer
     permission_classes = [IsAuthorOrReadOnly]
+    
+def trigger_error(request):
+    division_by_zero = 1 / 0
